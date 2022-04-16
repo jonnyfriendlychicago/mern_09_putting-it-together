@@ -1,24 +1,47 @@
-import logo from './logo.svg';
+
 import './App.css';
+import {Button, Card} from 'react-bootstrap';
+import React from 'react'; // added this line
+import AmigoCmp from './components/AmigoCmp';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <header>
+      <div className="header_content"> 
+          <div className="header_content_vert_left"> 
+              <a href="#" className="header_home_link" >
+                  <h1 >Sitename</h1>
+                  <h2>Feel the love.</h2>
+              </a>
+          </div>
+          <div className="header_content_vert_right" > 
+              <h2>firstName LastName</h2>
+              <p>(UserID: plcehldr)</p>
+              <div className="header_content_horiz_right">
+                  <a href="#">My Profile</a>
+                  <a href="#">Logout</a>
+              </div>
+          </div>
+      </div>
+    </header>
+
+    <main>
+      <div className="row_left">
+        <AmigoCmp firstName={"Jane"} lastName={"Dos Equis"}  initAge = {49}/>
+        <AmigoCmp firstName={"Negra"} lastName={"Modelo"}  initAge = {33}/>
+        
+        <form action="/process" method="post">
+          <label htmlFor="fname">First name:</label><br></br>
+          <input type="text" id="fname" name="fname"></input>
+            <br></br>
+        </form> 
+
+
+      </div>
+    </main>
+    </>
+
   );
 }
 
