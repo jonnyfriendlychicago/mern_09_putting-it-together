@@ -30,6 +30,7 @@ function App() {
       <div className="row_left">
         <AmigoCmp firstName={"Jane"} lastName={"Dos Equis"}  initAge = {49}/>
         <AmigoCmp firstName={"Negra"} lastName={"Modelo"}  initAge = {33}/>
+        <AmigoCmp firstName={"Boricua"} lastName={"Morena"}  initAge = {39}/>
         
         <form action="/process" method="post">
           <label htmlFor="fname">First name:</label><br></br>

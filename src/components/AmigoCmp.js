@@ -1,7 +1,5 @@
-import React, { useState } from 'react'; 
+import React, { useState } from 'react';  // added the comma/useState to enable mutable props
 import {Button, Card} from 'react-bootstrap';
-
-
 
 const AmigoCmp = (props) => {
     
