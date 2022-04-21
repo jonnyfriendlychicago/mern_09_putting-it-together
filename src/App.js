@@ -11,7 +11,7 @@ function App() {
       <div className="header_content"> 
           <div className="header_content_vert_left"> 
               <a href="#" className="header_home_link" >
-                  <h1 >Sitename</h1>
+                  <h1>Sitename</h1>
                   <h2>Feel the love.</h2>
               </a>
           </div>
